@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 60%;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(157, 164, 170);
+}
+
+.tab-container {
+  display: flex;
+  margin: 20px 0;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.tab-container div {
+  cursor: pointer;
+}
+.tab-container div:hover {
+  color: lightgray;
+}
+.tab-container div.active{
+  color: lightgray;
+}
+
+/* Home page styling */
+
+/* Menu page styling */
+.container .menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .menu-container .menu-entry {
+  height: 300px;
+}
+.container .menu-container .menu-entry .image-div {
+  height: 60%;
+}
+.container .menu-container .menu-entry .image-div img {
+  height: 100%;
+  /* width: 100%; */
+}

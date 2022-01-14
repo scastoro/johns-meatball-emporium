@@ -19,6 +19,10 @@ module.exports = {
         include: path.join(__dirname, 'src'),
         type: 'asset/resource',
       },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   }
 }
