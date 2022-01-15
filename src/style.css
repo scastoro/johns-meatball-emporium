@@ -8,12 +8,24 @@ body {
   width: 60%;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
-  background-color: rgb(157, 164, 170);
+  text-align: center;
+  background-color: rgb(155, 52, 39);
+}
+
+#content {
+  background-color: burlywood;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .tab-container {
+  position: absolute;
+  top: 0;
   display: flex;
-  margin: 20px 0;
+  padding: 20px 0;
   font-size: 30px;
   justify-content: center;
   align-items: center;
@@ -24,22 +36,44 @@ body {
   cursor: pointer;
 }
 .tab-container div:hover {
-  color: lightgray;
+  color: white;
 }
 .tab-container div.active{
-  color: lightgray;
+  color: white;
+}
+
+.container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%; */
+}
+
+.container h1 {
+  margin-bottom: 20px;
 }
 
 /* Home page styling */
-
+.container .home-div {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
 /* Menu page styling */
 .container .menu-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .container .menu-container .menu-entry {
   height: 300px;
+  width: 400px;
+  text-align: center;
+  margin: 20px 0;
+  flex: 1;
+}
+.container .menu-container .menu-entry h3 {
+  padding: 15px;
+  font-size: 22px;
 }
 .container .menu-container .menu-entry .image-div {
   height: 60%;
@@ -47,4 +81,20 @@ body {
 .container .menu-container .menu-entry .image-div img {
   height: 100%;
   /* width: 100%; */
+}
+
+.container .menu-container .menu-entry p {
+  padding: 10px 25px;
+}
+
+/* About us styling */
+.container .contact-img-div {
+  margin: 50px 0;
+}
+.container .contact-div {
+  margin: 25px 0;
+}
+.container .contact-div p {
+  padding: 10px;
+  font-size: 20px;
 }

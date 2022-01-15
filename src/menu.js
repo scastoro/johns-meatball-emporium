@@ -24,7 +24,7 @@ const renderMenuPage = () => {
   const classicDiv = document.createElement('div');
   classicDiv.classList.toggle('menu-entry');
   const classicHeader = document.createElement('h3');
-  classicHeader.innerText = 'Our classic Italian meatball.';
+  classicHeader.innerText = 'The classic Italian meatball';
   classicDiv.appendChild(classicHeader);
 
   const classicPic = new Image();
@@ -44,7 +44,7 @@ const renderMenuPage = () => {
   const chineseDiv = document.createElement('div');
   chineseDiv.classList.toggle('menu-entry');
   const chineseHeader = document.createElement('h3');
-  chineseHeader.innerText = 'Our chinese meatball.';
+  chineseHeader.innerText = 'Our chinese meatballs';
   chineseDiv.appendChild(chineseHeader);
 
   const chinesePic = new Image();
@@ -63,30 +63,38 @@ const renderMenuPage = () => {
   const swedishDiv = document.createElement('div');
   swedishDiv.classList.toggle('menu-entry');
   const swedishHeader = document.createElement('h3');
-  swedishHeader.innerText = 'Our swedish meatball.';
+  swedishHeader.innerText = 'Our swedish meatballs';
   swedishDiv.appendChild(swedishHeader);
 
   const swedishPic = new Image();
   swedishPic.src = swedish;
-  swedishDiv.appendChild(swedishPic);
+  const swedishImageDiv = document.createElement('div');
+  swedishImageDiv.classList.toggle('image-div');
+
+  swedishImageDiv.appendChild(swedishPic);
+  swedishDiv.appendChild(swedishImageDiv);
 
   const swedishDescription = document.createElement('p');
   swedishDescription.innerText = 'This nordic delight will be sure to warm up any cold winter evening.'
   swedishDiv.appendChild(swedishDescription);
 
-  // Falafel
+  // Falafel menu item
   const falafelDiv = document.createElement('div');
   falafelDiv.classList.toggle('menu-entry');
   const falafelHeader = document.createElement('h3');
-  falafelHeader.innerText = 'Our falafel meatball.';
+  falafelHeader.innerText = 'Our falafels';
   falafelDiv.appendChild(falafelHeader);
 
   const falafelPic = new Image();
   falafelPic.src = falafel;
-  falafelDiv.appendChild(falafelPic);
+  const falafelImageDiv = document.createElement('div');
+  falafelImageDiv.classList.toggle('image-div');
+
+  falafelImageDiv.appendChild(falafelPic);
+  falafelDiv.appendChild(falafelImageDiv);
 
   const falafelDescription = document.createElement('p');
-  falafelDescription.innerText = 'An exciting experience from the far east. Enjoy the contrasting flavors.'
+  falafelDescription.innerText = 'Are falafels meatballs? We don\'t let such deep philosophical questions stop us from enjoying the middle eastern treat.'
   falafelDiv.appendChild(falafelDescription);
 
   container.appendChild(header);

@@ -17,6 +17,7 @@ const renderHomePage = () => {
   myIcon.src = Icon;
 
   const paraDiv = document.createElement('div');
+  paraDiv.classList.toggle('home-div');
 
   const firstPara = document.createElement('p');
   firstPara.innerText = 'Now serving the finest meatballs from all around the world!';
