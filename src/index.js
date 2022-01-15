@@ -28,7 +28,7 @@ const renderTabs = () => {
   contentDiv.appendChild(tabContainer);
 }
 
-// Create function to add active class to current tab
+// Function that adds active class to current tab
 function addActiveClass(event) {
   const tabs = document.querySelectorAll('.tab-container div');
 

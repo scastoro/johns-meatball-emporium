@@ -82,7 +82,7 @@ const renderMenuPage = () => {
   const falafelDiv = document.createElement('div');
   falafelDiv.classList.toggle('menu-entry');
   const falafelHeader = document.createElement('h3');
-  falafelHeader.innerText = 'Our falafels';
+  falafelHeader.innerText = 'Amazing falafels';
   falafelDiv.appendChild(falafelHeader);
 
   const falafelPic = new Image();
@@ -94,7 +94,7 @@ const renderMenuPage = () => {
   falafelDiv.appendChild(falafelImageDiv);
 
   const falafelDescription = document.createElement('p');
-  falafelDescription.innerText = 'Are falafels meatballs? We don\'t let such deep philosophical questions stop us from enjoying the middle eastern treat.'
+  falafelDescription.innerText = 'Are falafels meatballs? We don\'t let such deep philosophical questions stop us from enjoying this fine middle eastern treat.'
   falafelDiv.appendChild(falafelDescription);
 
   container.appendChild(header);

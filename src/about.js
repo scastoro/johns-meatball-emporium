@@ -11,14 +11,14 @@ const renderAboutPage = () => {
   container.classList.toggle('container')
 
   const header = document.createElement('h1');
-  header.innerText = 'About Us.';
+  header.innerText = 'About Us';
 
   const imageDiv = document.createElement('div');
   imageDiv.classList.toggle('contact-img-div')
   const mapImg = new Image();
 
   mapImg.src = map;
-  imageDiv.appendChild(mapImg);
+  imageDiv.appendChild(mapImg); 
 
   const contactDiv = document.createElement('div');
   contactDiv.classList.toggle('contact-div');
